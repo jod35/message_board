@@ -7,7 +7,7 @@ class PostModelTest(TestCase):
         Post.objects.create(title='title',content='content')
 
     def test_text_content(self):
-        post=Post.objects.get(id=1)
+        post=Post.objects.get(id=7)
         expected_postname=f"{post.title}"
 
         self.assertEqual(expected_postname,'title')
